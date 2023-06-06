@@ -8,8 +8,7 @@ class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
         boolean resp = true;
         if (ransomNote.length() > magazine.length()){
-            resp = false;
-            return resp;
+            return false;
         }
 
         HashMap<Character, Integer> map = new HashMap<>();
@@ -24,7 +23,7 @@ class Solution {
             if(map.containsKey(ransomNote.charAt(i)) && map.get(ransomNote.charAt(i))>0){
                 map.put(ransomNote.charAt(i), map.get(ransomNote.charAt(i))-1);
             }else{
-                resp = false;
+                return false;
             }
         }
 
