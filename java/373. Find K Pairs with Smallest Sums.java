@@ -34,6 +34,8 @@ class Solution {
                 pq.offer(new int[]{sum-nums2[pos]+nums2[pos+1], pos+1});
             }
 
+            //The offer() method adds the element to the priority queue based on the defined priority order. The priority queue automatically reorders its elements based on the priority after each addition.
+            
             k--;
         }
 
