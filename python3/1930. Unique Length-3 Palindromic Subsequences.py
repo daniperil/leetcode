@@ -9,7 +9,7 @@ For example, "ace" is a subsequence of "abcde".
 
 class Solution:
     def countPalindromicSubsequence(self, s: str) -> int:
-        letters = set(s)
+        letters = set(s) #Creates a set of all unique characters in the string s.
         ans = 0
         
         for letter in letters:
